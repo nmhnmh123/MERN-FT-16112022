@@ -5,3 +5,26 @@ Content-Type: application/json
     "username":"hai123",
     "password":"minhhai3817"
 }
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"nmhnmh123",
+    "password":"minhhai3817"
+}
+
+###
+
+POST http://localhost:5000/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2FlMmJhNzlmNzdkM2M4NDAzNWU0ZTkiLCJpYXQiOjE2NzIzOTI5OTd9.7YU3MHffEc7ViZI8FnfxcwI7Rlog_pXD_XBMhCPgJ7g
+
+{
+    "title":"main",
+    "description":"Welcome",
+    "url":"localhost:5000/api",
+    "status":"LEARNING"
+}
