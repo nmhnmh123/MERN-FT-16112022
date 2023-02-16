@@ -28,3 +28,28 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2FlM
     "url":"localhost:5000/api",
     "status":"LEARNING"
 }
+
+###
+
+GET http://localhost:5000/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2FlMmJhNzlmNzdkM2M4NDAzNWU0ZTkiLCJpYXQiOjE2NzY1MzM3NTh9.0-VcVlAeOGevit0vJWLRLLZbS2uYVcqLcijM1Ihx6_M
+
+
+###
+
+PUT http://localhost:5000/api/post/63aeb137d461b23edf1e27fd
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2FlMmJhNzlmNzdkM2M4NDAzNWU0ZTkiLCJpYXQiOjE2NzY1MzM3NTh9.0-VcVlAeOGevit0vJWLRLLZbS2uYVcqLcijM1Ihx6_M
+
+{
+    "title":"hai",
+    "description":"hai",
+    "url":"localhost:5000/api/hai",
+    "status":"LEARNING"
+}
+
+###
+
+DELETE http://localhost:5000/api/post/63aeb137d461b23edf1e27fd
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2FlMmJhNzlmNzdkM2M4NDAzNWU0ZTkiLCJpYXQiOjE2NzY1MzM3NTh9.0-VcVlAeOGevit0vJWLRLLZbS2uYVcqLcijM1Ihx6_M
