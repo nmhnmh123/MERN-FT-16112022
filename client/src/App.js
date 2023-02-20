@@ -1,10 +1,16 @@
 import './App.css';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
+import Landing from './components/layout/Landing';
+import Login from './components/auth/Login';
 
 function App() {
   return (
-    <div className="App">
-      hello
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Landing}/>
+        <Route exact path='/login' component={Login}/>
+      </Switch>
+    </Router>
   );
 }
 
