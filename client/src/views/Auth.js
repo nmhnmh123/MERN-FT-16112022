@@ -10,9 +10,9 @@ const Auth = ({ authRoute }) => {
     </>
   );
   return (
-    <div class="landing">
-      <div class="dark-overlay">
-        <div class="landing-inner">
+    <div className="landing">
+      <div className="dark-overlay">
+        <div className="landing-inner">
           <h1>ToLearnList</h1>
           <h4>List course IT should learn</h4>
           {body}
