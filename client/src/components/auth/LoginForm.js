@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 import { useState, useContext } from "react";
 
@@ -8,10 +8,14 @@ const LoginForm = () => {
   //context
   const { loginUser } = useContext(AuthContext);
 
+  //local state
   const [loginForm, setLoginForm] = useState({
     username: "",
     password: "",
   });
+
+  //router
+  const history = useHistory();
 
   const { username, password } = loginForm;
 
@@ -22,7 +26,9 @@ const LoginForm = () => {
     event.preventDefault();
     try {
       const loginData = await loginUser(loginForm);
-      console.log(loginData);
+      if(loginData.success){
+        history.push('/dashboard')
+      }
     } catch (error) {
       console.log(error);
     }
