@@ -51,7 +51,9 @@ const AuthContextProvider = ({ children }) => {
       const res = await axios.post(`${apiUrl}/auth/login`, userForm);
       if (res.data.success) {
         localStorage.setItem(LOCAL_STORAGE_TOKEN_NAME, res.data.accessToken);
+        await loadUser()
       }
+      
       return res.data;
     } catch (error) {
       if (error.response.data) return error.response.data;

@@ -27,7 +27,7 @@ const LoginForm = () => {
     try {
       const loginData = await loginUser(loginForm);
       if(loginData.success){
-        history.push('/dashboard')
+        //history.push('/dashboard')
       }
     } catch (error) {
       console.log(error);
